@@ -1,0 +1,25 @@
+# Build & Install Artifacts
+build/
+install/
+log/
+.colcon/
+*.o
+*.so
+*.a
+*.pyc
+__pycache__/
+
+# Sub-workspace build artifacts
+*/build/
+*/install/
+*/log/
+*/*/build/
+*/*/install/
+*/*/log/
+
+# OS / Editor Files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
