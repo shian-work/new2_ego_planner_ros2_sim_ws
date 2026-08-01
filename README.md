@@ -2,7 +2,35 @@
 
 本文件紀錄 `~/new2_ego_planner_ros2_sim_ws` 工作區中，關於 **Gazebo 模擬環境 (World/SDF)、無人機載具、雷達點雲橋接、Ego-Planner 轉換流程、系統啟動指令、飛行模式與訂閱節點修改** 的完整說明。
 
----
+感謝以下這些網址供我慘考
+1.download form these git
+
+1.1 px4+ QCcontral（ros2) 
+
+https://github.com/nikhilsnayak/ROS2-PX4
+
+qc 
+
+wget https://github.com/mavlink/qgroundcontrol/releases/download/v4.4.0/QGroundControl.AppImage -O QGroundControl.AppImage
+
+1.2 ego-planner swam
+
+ https://github.com/DongnanHu6556/ego-swarm-ros2/tree/main
+
+1.3 ego-planner-ros2-sim
+
+ https://github.com/DongnanHu6556/ego-planner-ros2- sim/tree/main
+
+1.4 px4_ego 
+
+https://github.com/DongnanHu6556/px4_ego/tree/main
+
+1.5 mid 360驅動
+
+git clone https://github.com/Livox-SDK/Livox-SDK2.git
+```
+git clone https://github.com/Livox-SDK/livox_ros_driver2.git
+
 
 ## 1. 工作區架構概覽 (Workspace Overview)
 
