@@ -10,10 +10,9 @@
 https://github.com/nikhilsnayak/ROS2-PX4
 
 qc （用這個下載比較好）
----
-
-wget https://github.com/mavlink/qgroundcontrol/releases/download/v4.4.0/QGroundControl.AppImage -O QGroundControl.AppImage
----
+```bash
+wget https://github.com/mavlink/qgroundcontrol/releases/download/v4.4.0/QGroundControl.AppImage -O QGroundControl.AppImage```
+```
 
 1.2 ego-planner swam
 
@@ -28,14 +27,12 @@ wget https://github.com/mavlink/qgroundcontrol/releases/download/v4.4.0/QGroundC
 https://github.com/DongnanHu6556/px4_ego/tree/main
 
 1.5 mid 360驅動
----
-
+```bash
 git clone https://github.com/Livox-SDK/Livox-SDK2.git
 ```
----
+```bash
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
-
----
+```
 ## 1. 工作區架構概覽 (Workspace Overview)
 
 * **工作區路徑**：`/home/yu/new2_ego_planner_ros2_sim_ws`
