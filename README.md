@@ -1,7 +1,9 @@
 # new2_ego_planner_ros2_sim_ws 修改與設定備忘錄 (REMIND)
 
 本文件紀錄 `~/new2_ego_planner_ros2_sim_ws` 工作區中，關於 **Gazebo 模擬環境 (World/SDF)、無人機載具、雷達點雲橋接、Ego-Planner 轉換流程、系統啟動指令、飛行模式與訂閱節點修改** 的完整說明。
+
 ubuntu 22.04 + ros2 humble + gazebo sim + ego-planner(ros2) + mid360
+
 感謝以下這些網址供我慘考
 1.download form these git
 
