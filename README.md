@@ -111,18 +111,33 @@ cd ~/new2_ego_planner_ros2_sim_ws
 
 執行模擬與規劃任務時，請依次開啟不同終端機 (Terminal) 執行下列步驟：
 
-### 【步驟一】載入環境變數（每個終端機皆需執行）
+### 【步驟0】啟動 qc and MicroXRCEAgent
+
+T1
+
+```bash
+MicroXRCEAgent udp4 -p 8888```
+
+T1
+
+```bash
+~/QGroundControl.AppImage
+```
+
+
+
+### 【步驟1】載入環境變數（每個終端機皆需執行）
 ```bash
 source ~/new2_ego_planner_ros2_sim_ws/setup_env.bash
 ```
 
-### 【步驟二】啟動 PX4 SITL & Gazebo 模擬器與雷達橋接
+### 【步驟2】啟動 PX4 SITL & Gazebo 模擬器與雷達橋接
 ```bash
 ros2 launch ~/new2_ego_planner_ros2_sim_ws/ego-planner-ros2-sim/px4_sitl_ros2.launch.py
 ```
 *(此指令會自動啟動 Gazebo 模擬環境、PX4 `x500_mid360` 飛控、Micro XRCE Agent、MAVROS 以及雷達橋接 `lidar_gz_bridge.py`)*
 
-### 【步驟三】啟動 PX4 控制代理 (Offboard Control)
+### 【步驟3】啟動 PX4 控制代理 (Offboard Control)
 * **終端機 3-A（運行 Offboard 控制節點）**：
   ```bash
   ros2 run px4_ego_py offboard_control_test
@@ -140,13 +155,13 @@ ros2 launch ~/new2_ego_planner_ros2_sim_ws/ego-planner-ros2-sim/px4_sitl_ros2.la
     * **`p`**：切換為位置控制模式 (Position control mode)。
     * **`m`**：切換為手動控制模式 (Manual control mode)。
 
-### 【步驟四】啟動 Ego-Planner 規劃器與 RViz
+### 【步驟4】啟動 Ego-Planner 規劃器與 RViz
 ```bash
 ros2 launch ego_planner single_uav_gazebo.launch.py
 ```
 *(啟動 `ego_planner` 節點、地圖建構與 RViz 可視化畫面)*
 
-### 【步驟五】發布目標點
+### 【步驟5】發布目標點
 * **方式 A（在 RViz 中點擊）**：在彈出的 RViz 視窗上方工具列選擇 **`2D Goal Pose`**，在地圖上點擊滑鼠右鍵並拖曳方向。
 * **方式 B（使用鍵盤指令 `s`）**：在 `mode_key.py` 終端機中輸入 **`s`** 並按 Enter，無人機即會自動規劃軌跡飛往指定目標點。
 
