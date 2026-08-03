@@ -157,9 +157,18 @@ ros2 launch ~/new2_ego_planner_ros2_sim_ws/ego-planner-ros2-sim/px4_sitl_ros2.la
     * **`m`**：切換為手動控制模式 (Manual control mode)。
 
 ### 【步驟4】啟動 Ego-Planner 規劃器與 RViz
+
+T1
 ```bash
 ros2 launch ego_planner single_uav_gazebo.launch.py
 ```
+
+T2
+```bash
+source install/setup.bash
+ros2 launch ego_planner rviz.launch.py
+```
+
 *(啟動 `ego_planner` 節點、地圖建構與 RViz 可視化畫面)*
 
 ### 【步驟5】發布目標點
