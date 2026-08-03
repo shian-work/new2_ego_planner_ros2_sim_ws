@@ -116,9 +116,10 @@ cd ~/new2_ego_planner_ros2_sim_ws
 T1
 
 ```bash
-MicroXRCEAgent udp4 -p 8888```
+MicroXRCEAgent udp4 -p 8888
+```
 
-T1
+T2
 
 ```bash
 ~/QGroundControl.AppImage
